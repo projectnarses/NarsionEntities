@@ -1,3 +1,9 @@
+# Hidden files
+.*
+
+# Minestom
+minecraft_data/*
+
 .gradle
 /build/
 
