@@ -5,13 +5,24 @@ plugins {
 group 'org.narses'
 version 'DEVELOPMENTBUILD-ALPHA'
 
+sourceCompatibility = 16
+
 repositories {
     mavenCentral()
     maven { url 'https://repo.spongepowered.org/maven' }
     maven { url 'https://jitpack.io' }
 }
 
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+            srcDir 'src/test/java'
+        }
+    }
+}
+
 dependencies {
     // Minestom (new block api)
-    implementation 'com.github.Minestom:Minestom:new-block-api-SNAPSHOT'
+    compileOnly 'com.github.Minestom:Minestom:new-block-api-SNAPSHOT'
 }
