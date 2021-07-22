@@ -75,6 +75,10 @@ public class ThrownItemEntity extends LivingEntity {
         return this.isMoving;
     }
 
+    public void setMoving(boolean isMoving) {
+        this.isMoving = isMoving;
+    }
+
     @Override
     public void update(long time) {
         super.update(time);
